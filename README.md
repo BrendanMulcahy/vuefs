@@ -8,6 +8,7 @@ An F# ASP.NET Core 2.0 SPA Sample Project with Vue.js and Webpack
 * [.NET Core](https://dot.net), version 2.0 or later
 
 ### Getting Started
+Open a command window at the root of the project and run the following:
 
 1. `dotnet restore`
 2. `npm install`
