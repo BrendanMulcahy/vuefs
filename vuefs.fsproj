@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\app\app.ts" />
+    <Content Include="ClientApp\components\app\app.vue.html" />
+    <Content Include="ClientApp\components\counter\counter.vue.html" />
+    <TypeScriptCompile Include="ClientApp\components\counter\counter.ts" />
+    <Content Include="ClientApp\components\fetchdata\fetchdata.vue.html" />
+    <TypeScriptCompile Include="ClientApp\components\fetchdata\fetchdata.ts" />
+    <Content Include="ClientApp\components\home\home.vue.html" />
+    <Content Include="ClientApp\components\navmenu\navmenu.css" />
+    <Content Include="ClientApp\components\navmenu\navmenu.vue.html" />
+    <Content Include="ClientApp\css\site.css" />
+    <TypeScriptCompile Include="ClientApp\boot.ts" />
+    <None Include="webpack.config.vendor.js" />
+    <Compile Include="Controllers\HomeController.fs" />
+    <Compile Include="Controllers\SampleDataController.fs" />
+    <Compile Include="Controllers/ValuesController.fs" />
+    <Compile Include="Startup.fs" />
+    <Compile Include="Program.fs" />
+    <None Include="webpack.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\dist\" />
+  </ItemGroup>
+
+</Project>
